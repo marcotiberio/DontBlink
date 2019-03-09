@@ -71,7 +71,15 @@ a:link {
     font-family: 'Playfair Display', serif;
 }
 
-#social-instagram {
+.social-icon {
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    transform: scale(1.5);}
+
+/* #social-instagram {
     cursor: pointer;
 }
 
@@ -79,7 +87,7 @@ a:link {
     transform: scale(2);
     background-color: black;
     color: #c9bbee;
-}
+} */
 
 /******************* SOCIAL *******************/
 
