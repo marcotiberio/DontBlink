@@ -19,9 +19,6 @@ function blink() {
   // }
 
   // _timeOut = setTimeout(resetBlink, 150);
-  }
-
-  _timeOut = setTimeout(resetBlink, 150);
 }
 
 function resetBlink() {
