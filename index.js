@@ -7,15 +7,18 @@ let start = new Date();
 function blink() {
   _blinked = true;
 
-  const now = new Date();
-  const timeDiff = (now - start) / 1000; //in s
-  // get seconds
-  const seconds = Math.round(timeDiff);
-  alert(`YOU BLINKED!`);
-  start = new Date();
+  // const now = new Date();
+  // const timeDiff = (now - start) / 1000; //in s
+  // // get seconds
+  // const seconds = Math.round(timeDiff);
+  if(!alert('YOU BLINKED !')){window.location.reload();} 
+  // start = new Date();
 
-  if (_timeOut > -1) {
-    clearTimeout(_timeOut);
+  // if (_timeOut > -1) {
+  //   clearTimeout(_timeOut);
+  // }
+
+  // _timeOut = setTimeout(resetBlink, 150);
   }
 
   _timeOut = setTimeout(resetBlink, 150);
