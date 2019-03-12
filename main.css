@@ -72,9 +72,22 @@ a:link {
     font-family: 'Playfair Display', serif;
 }
 
+/******************* SOCIAL *******************/
+
+.social {
+    background-color: black;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: right;
+    padding-top: 2%;
+    padding-right: 2%;
+    color: #c9bbee !important;
+    cursor: pointer !important;
+}
+
 .social-icon {
     margin-left: 1%;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 .social-icon:hover {
@@ -89,18 +102,6 @@ a:link {
     background-color: black;
     color: #c9bbee;
 } */
-
-/******************* SOCIAL *******************/
-
-.social {
-    background-color: black;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    text-align: right;
-    padding-top: 2%;
-    padding-right: 2%;
-    color: #c9bbee !important;
-}
 
 /******************* MAIN *******************/
 
