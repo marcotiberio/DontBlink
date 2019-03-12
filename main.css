@@ -55,7 +55,7 @@ a:link {
 
 .header {
     background-color: black;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Teko', sans-serif;
     color: white;
     font-size: 60px;
     line-height: 1em;
@@ -65,12 +65,14 @@ a:link {
     letter-spacing: 3px;
     grid-column-start: 1;
     grid-column-end: 2;
+    cursor: default;
+    font-family: 'Teko', sans-serif;
 }
 
-#logo {
+/* #logo {
     cursor: default;
     font-family: 'Open Sans', sans-serif;
-    transform: scale(.5, 1);
+    transform: scale(.5, 1);*/
 }
 
 /******************* SOCIAL *******************/
