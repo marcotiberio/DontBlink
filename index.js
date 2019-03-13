@@ -11,7 +11,7 @@ function blink() {
   // const timeDiff = (now - start) / 1000; //in s
   // // get seconds
   // const seconds = Math.round(timeDiff);
-  if(!alert('YOU BLINKED, DON&#x27;T BLINK! THE VIDEO WILL RESTART. SEE YOU LATER!')){window.location.reload();} 
+  if(!alert('YOU BLINKED, DO NOT BLINK! THE VIDEO WILL RESTART. SEE YOU LATER!')){window.location.reload();} 
   // start = new Date();
 
   // if (_timeOut > -1) {
