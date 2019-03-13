@@ -180,6 +180,7 @@ h1 {
 @media only screen and (max-width: 600px) {
     .social-icon {
         padding-top: 5% !important;
+	width: 1.2em !important;
     }
 
   }
