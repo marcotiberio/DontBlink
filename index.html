@@ -24,76 +24,34 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
-
-        <style>
-          #canvas_container {
-            background-color: black;
-            position: fixed;
-            left: 0px;
-            top: 0px;
-            width: 100%;
-            height: 100%;
-            display: none;
-          }
-          
-        </style>
+    
 
 </head>
 
   <body data-gr-c-s-loaded="true">
-    <div id="canvas_container" style="left: 0px;">
-      <canvas id="the_canvas" width="100%" height="100%"></canvas>
-    </div>
 
-    <section class="container">
+    <section class="container-landing">
 
-      <div class="header">
-          <!-- <button id="logo"></button> -->
-          BLITHE
-      </div>
+        <div class="header-landing">BLITHE</div>
 
-      <div class="social">
-          <a href="https://www.instagram.com/blithesaxon/" target="_blank"><img src="assets/Blithe_Instagram.png" class="social-icon" style="width: 2.2em;"></a>
-          <a href="https://open.spotify.com/artist/604wNNLUmrAmNOSEU8GfK4" target="_blank"><img src="assets/Blithe_Spotify.png" class="social-icon" style="width: 2.2em;"></a>
-          <a href="https://www.youtube.com/watch?v=IE_aTCohKGA&list=RDEMJ3jnniSL8TCCpeGbqggo0w&start_radio=1" target="_blank"><img src="assets/Blithe_Youtube.png" class="social-icon" style="width: 2.2em;"></a>
-      </div>
+        <div class="social"></div>
 
-      <div class="main">
-        <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/GGqKt365FxU?controls=0&autoplay=1&showinfo=0&rel=0&loop=1&disablekb=1&modestbranding=1" frameborder="0" allow=" autoplay;"></iframe>
-      </div>
+        <div class="main-landing">
+            <div class="text-landing">Try not to blink or the video will restart.<br>This experience requires camera access.<br>
+                <input type="button" id="button-landing" value="PLAY" onclick="window.location.href='indexvideo.html'" />
+            </div> 
+        </div>
           
-      <div class="footer">
-          <div>
-              <p id="about" data-toggle="modal" data-target="#aboutModal" style="font-family: 'Open Sans', sans-serif;">Imprint</p>
-          </div>
-      </div>
-  </section>
+        <div class="footer-landing"></div>
+      
+    </section>
 
-
-
-  <!-- Modal -->
-  <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-          <div class="modal-content">
-              <div class="modal-header">
-              </div>
-              <div class="modal-body" style="font-family: 'Open Sans', sans-serif;">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum.
-              </div>
-          </div>
-      </div>
-  </div>
-
-    <!-- Webcam -->
-    <video id="_webcam" style="display: none;" playsinline></video>
-    <canvas
-      id="_imageData"
-      style="position: absolute; z-index: -999; opacity: 0;">
-    </canvas>
+  <!-- Webcam -->
+  <!-- <video id="_webcam" style="display: none;" playsinline></video>
+  <canvas
+    id="_imageData"
+    style="position: absolute; z-index: -999; opacity: 0;">
+  </canvas> -->
 
 
     
@@ -104,12 +62,17 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="js/utils/BRFv4PointUtils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.3.0/dist/sweetalert2.all.min.js"></script>
+    <!-- <script src="js/utils/BRFv4PointUtils.js"></script>
     <script src="js/BRFv4DemoMinimalWebcam.js"></script>
-    <script src="index.js"></script>
+    <script src="index.js"></script> -->
 
     <script>      
-      var brfv4 = {};
+    // var brfv4 = {};
+
+      // $("#button-close").click( function() { $("#overlay").hide(); } );
+
+      // videojs('player', {autoplay: true});
 
       // $(document).ready(function(){
       //   $("button").click(function(){
