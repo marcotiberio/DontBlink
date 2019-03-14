@@ -17,6 +17,16 @@ button {
     letter-spacing: 3px;
 }
 
+#canvas_container {
+    background-color: black;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+
 /* unvisited link */
 a:link {
     color: white;
@@ -50,6 +60,79 @@ a:link {
     align-content: center;
 }
 
+/******************* LANDING *******************/
+
+.container-landing {
+    margin: 0;
+    padding: 0;
+    background-color: black !important;
+    width: 100%;
+    max-width: 100vw !important;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 11% 78% 11%;
+    align-content: center;
+}
+
+.header-landing {
+    background-color: black;
+    font-family: 'Teko', sans-serif;
+    color: white;
+    font-size: 60px;
+    line-height: 1em;
+    padding-top: 1.3%;
+    padding-left: 6.4%;
+    font-weight: 700;
+    letter-spacing: 3px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    cursor: default;
+    font-family: 'Teko', sans-serif;
+}
+
+.main-landing {
+    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    justify-self: center;
+    color: white;
+}
+
+.text-landing {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    padding-top: 30%;
+}
+
+#button-landing {
+    margin-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border: 3px white solid;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+#button-landing:hover {
+    border: 3px white solid;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-landing {
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
 
 /******************* HEADER *******************/
 
@@ -59,8 +142,8 @@ a:link {
     color: white;
     font-size: 60px;
     line-height: 1em;
-    padding-top: 3.5%;
-    padding-left: 3%;
+    padding-top: 1.5%;
+    padding-left: 5%;
     font-weight: 700;
     letter-spacing: 3px;
     grid-column-start: 1;
@@ -83,7 +166,7 @@ a:link {
     grid-column-end: 3;
     text-align: right;
     padding-top: 2.5%;
-    padding-right: 2%;
+    padding-right: 5%;
     color: white !important;
     cursor: pointer !important;
     z-index: 1000;
@@ -117,18 +200,6 @@ a:link {
     grid-column-end: 3;
 }
 
-.central {
-	padding: 60px 15px;
-	text-align: center;
-	max-width: 100%;
-}
-h1 {
-	font-size: 2.5em;
-	font-weight: 300;
-	color: rgba(255, 255, 255, .9);
-	margin: 0 0 10px;
-}
-
 #video {
     width: 100%;
 }
@@ -149,7 +220,7 @@ h1 {
     letter-spacing: 1px;
     cursor: pointer;
     padding-top: 2%;
-    padding-left: 1%;
+    padding-left: 2.7%;
 }
 
 #aboutModal {
@@ -175,12 +246,13 @@ h1 {
     border-bottom: none !important;
 }
 
+
+
 /* *** MOBILE *** */
 
 @media only screen and (max-width: 600px) {
     .social-icon {
         padding-top: 5% !important;
-	width: 1.2em !important;
     }
 
   }
