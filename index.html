@@ -24,12 +24,23 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
-    
+
+        <style>
+          #canvas_container {
+            background-color: black;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            display: none;
+          }
+          
+        </style>
 
 </head>
 
   <body data-gr-c-s-loaded="true">
-
     <div id="canvas_container" style="left: 0px;">
       <canvas id="the_canvas" width="100%" height="100%"></canvas>
     </div>
@@ -37,6 +48,7 @@
     <section class="container">
 
       <div class="header">
+          <!-- <button id="logo"></button> -->
           BLITHE
       </div>
 
@@ -47,24 +59,14 @@
       </div>
 
       <div class="main">
-
-        <!-- <div id="overlay">
-          <div id="overlay-text">Don't blink or the video will restart.<br>
-            <button id="button-close" style="cursor: pointer;">OK</button>
-          </div>
-        </div> -->
-        <!-- <video controls autoplay preload="auto" src="assets/videotest.mov"></video>
-        <video-js autoplay src="assets/videotest.mov"></video-js>           -->
-        <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/r_jnsbqtjeU?controls=0&autoplay=1&showinfo=0&rel=0&loop=1&disablekb=1&modestbranding=1" frameborder="0" allow=" autoplay;"></iframe>
-      
+        <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/GGqKt365FxU?controls=0&autoplay=1&showinfo=0&rel=0&loop=1&disablekb=1&modestbranding=1" frameborder="0" allow=" autoplay;"></iframe>
       </div>
           
       <div class="footer">
-        <div>
-          <p id="about" data-toggle="modal" data-target="#aboutModal" style="font-family: 'Open Sans', sans-serif;">Imprint</p>
-        </div>
+          <div>
+              <p id="about" data-toggle="modal" data-target="#aboutModal" style="font-family: 'Open Sans', sans-serif;">Imprint</p>
+          </div>
       </div>
-      
   </section>
 
 
@@ -102,18 +104,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.3.0/dist/sweetalert2.all.min.js"></script>
     <script src="js/utils/BRFv4PointUtils.js"></script>
     <script src="js/BRFv4DemoMinimalWebcam.js"></script>
     <script src="index.js"></script>
 
     <script>      
       var brfv4 = {};
-
-      // $("#button-close").click( function() { $("#overlay").hide(); } );
-
-      // videojs('player', {autoplay: true});
-
       // $(document).ready(function(){
       //   $("button").click(function(){
       //   location.reload(true);
