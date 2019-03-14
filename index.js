@@ -2,7 +2,7 @@
 // let neutral = {};
 // let smiled = false;
 
-// let start = new Date();
+let start = new Date();
 
 function blink() {
   _blinked = true;
