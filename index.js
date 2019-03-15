@@ -2,7 +2,7 @@
 // let neutral = {};
 // let smiled = false;
 
-// let start = new Date();
+let start = new Date();
 
 function blink() {
   _blinked = true;
@@ -11,7 +11,7 @@ function blink() {
   // const timeDiff = (now - start) / 1000; //in s
   // // get seconds
   // const seconds = Math.round(timeDiff);
-  if(!alert('YOU BLINKED, DO NOT BLINK! THE VIDEO WILL RESTART. SEE YOU LATER!')){window.location.reload();} 
+  if(!alert('YOU BLINKED! THE VIDEO WILL BE RELOADED. SEE YOU LATER!')){window.location.reload();} 
   // start = new Date();
 
   // if (_timeOut > -1) {

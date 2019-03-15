@@ -60,10 +60,8 @@ a:link {
     align-content: center;
 }
 
-
 /******************* LANDING *******************/
 
-/*
 .container-landing {
     margin: 0;
     padding: 0;
@@ -92,8 +90,21 @@ a:link {
     font-family: 'Teko', sans-serif;
 }
 
-.main-landing {
+.social-landing {
     background-color: black;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: right;
+    padding-top: 2.5%;
+    padding-right: 7%;
+    color: white !important;
+    cursor: pointer !important;
+    z-index: 1000;
+}
+
+.main-landing {
+    background-image: url(assets/landing.png);
+    /* background-color: black; */
     grid-column-start: 1;
     grid-column-end: 3;
     text-align: center;
@@ -102,9 +113,18 @@ a:link {
 }
 
 .text-landing {
+    background: url(assets/landing.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     font-family: 'Open Sans', sans-serif;
     font-size: 2em;
-    padding-top: 30%;
+    position: absolute;
+    width: 100%;
+    height: 78%;
+    top: 11%;
+    left: 0;
 }
 
 #button-landing {
@@ -135,7 +155,6 @@ a:link {
     grid-column-start: 1;
     grid-column-end: 3;
 }
-*/
 
 /******************* HEADER *******************/
 
