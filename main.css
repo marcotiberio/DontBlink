@@ -113,13 +113,13 @@ a:link {
 }
 
 .text-landing {
-    background: url(assets/landing.png) no-repeat center center fixed; 
+    background: url(assets/landing.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
-    font-size: 2em;
+    font-size: 20px;
     position: absolute;
     width: 100%;
     height: 78%;
@@ -128,10 +128,10 @@ a:link {
 }
 
 #button-landing {
-    margin-top: 3%;
-    padding-left: 3%;
-    padding-right: 3%;
-    border: 3px white solid;
+    margin-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: 2px white solid;
     background-color: transparent;
     color: white;
     cursor: pointer;
