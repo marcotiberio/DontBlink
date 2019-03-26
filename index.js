@@ -7,18 +7,18 @@ let start = new Date();
 function blink() {
   _blinked = true;
 
-  // const now = new Date();
-  // const timeDiff = (now - start) / 1000; //in s
+  const now = new Date();
+  const timeDiff = (now - start) / 1000; //in s
   // // get seconds
-  // const seconds = Math.round(timeDiff);
-  if(!alert('YOU BLINKED! THE VIDEO WILL BE RELOADED. SEE YOU LATER!')){window.location.reload();} 
+  const seconds = Math.round(timeDiff);
+  if(!alert(`YOU LASTED ${seconds} SECONDS!`)){window.location.reload();} 
   // start = new Date();
 
-  // if (_timeOut > -1) {
-  //   clearTimeout(_timeOut);
-  // }
+  if (_timeOut > -1) {
+     clearTimeout(_timeOut);
+  }
 
-  // _timeOut = setTimeout(resetBlink, 150);
+  _timeOut = setTimeout(resetBlink, 150);
 }
 
 function resetBlink() {
