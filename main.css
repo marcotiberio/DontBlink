@@ -30,22 +30,22 @@ button {
 /* unvisited link */
 a:link {
     color: white;
-  }
-  
-  /* visited link */
-  a:visited {
+}
+
+/* visited link */
+a:visited {
     color: white;
-  }
-  
-  /* mouse over link */
-  a:hover {
+}
+
+/* mouse over link */
+a:hover {
     color: white;
-  }
-  
-  /* selected link */
-  a:active {
+}
+
+/* selected link */
+a:active {
     color: white;
-  }
+}
 
 .container {
     margin: 0;
@@ -87,7 +87,6 @@ a:link {
     grid-column-start: 1;
     grid-column-end: 2;
     cursor: default;
-    font-family: 'Teko', sans-serif;
 }
 
 .social-landing {
@@ -103,7 +102,7 @@ a:link {
 }
 
 .main-landing {
-    background-image: url(assets/landing.png);
+    background-image: url(assets/landing.jpg);
     /* background-color: black; */
     grid-column-start: 1;
     grid-column-end: 3;
@@ -113,7 +112,7 @@ a:link {
 }
 
 .text-landing {
-    background: url(assets/landing.png) no-repeat center center fixed;
+    background: url(assets/landing.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -135,16 +134,17 @@ a:link {
     background-color: transparent;
     color: white;
     cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Teko', sans-serif;
+    font-size: 30px !important;
+    font-weight: 700;
+    letter-spacing: 1px;
     transition: background-color 0.5s ease;
 }
 
 #button-landing:hover {
-    border: 3px white solid;
     background-color: white;
     color: black;
     cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .footer-landing {
@@ -154,6 +154,10 @@ a:link {
     font-weight: 400;
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+.footer-landing {
+    padding-left: 1.5%;
 }
 
 /******************* HEADER *******************/
@@ -267,7 +271,6 @@ a:link {
 .modal-header {
     border-bottom: none !important;
 }
-
 
 
 /* *** MOBILE *** */
