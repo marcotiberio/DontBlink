@@ -62,7 +62,7 @@ function blink() {
   // get seconds
   const seconds = Math.round(timeDiff);
   if(confirm(`You lasted ${seconds} seconds! Click OK to keep playing or CANCEL to play full video!`)){}
-  else    window.location.replace("share.html");
+  else    window.location.replace("fullvideo.html");
   _start = new Date();
 
   if (_timeOut > -1) {
