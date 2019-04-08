@@ -61,7 +61,7 @@ function blink() {
   const timeDiff = (now - _start) / 1000; //in s
   // get seconds
   const seconds = Math.round(timeDiff);
-  if(confirm(`You lasted ${seconds} seconds! Click OK to keep playing or CANCEL to play again or share this page with your friends!`)){}
+  if(confirm(`You lasted ${seconds} seconds! Click OK to keep playing or CANCEL to play full video!`)){}
   else    window.location.replace("share.html");
   _start = new Date();
 
