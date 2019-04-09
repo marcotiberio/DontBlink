@@ -98,7 +98,7 @@ a:active {
     padding-top: 2.5%;
     padding-right: 7%;
     color: white !important;
-    cursor: pointer !important;
+    /* cursor: pointer !important; */
     z-index: 1000;
 }
 
@@ -196,7 +196,7 @@ a:active {
     padding-top: 2.5%;
     padding-right: 5%;
     color: white !important;
-    cursor: pointer !important;
+    /* cursor: pointer !important; */
     z-index: 1000;
 }
 
