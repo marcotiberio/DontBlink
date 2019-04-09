@@ -10,9 +10,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Blithe - Don't Blink</title>
+
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="main.css" type="text/css" rel="stylesheet" media="screen" />
+
+    <!-- FB SHARE -->
+    <meta property="og:url" content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+    <meta property="og:type"  content="Website" />
+    <meta property="og:title" content="Don't Blink - Blithe" />
+    <meta property="og:description" content="How long can you resist without blinking?" />
+    <meta property="og:image" content="assets/landing.jpg" />
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -30,21 +38,26 @@
 
   <body data-gr-c-s-loaded="true">
 
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+
     <section class="container-landing">
 
         <div class="header-landing">BLITHE</div>
 
         <div class="social-landing">
-          <a href="https://www.instagram.com/blithesaxon/" target="_blank"><img src="assets/Blithe_Share.png" class="social-icon" style="width: 2.2em;"></a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmarcotiberio.github.io%2FDontBlink%2F&amp;src=sdkpreparse" target="_blank" class="fb-share-button" data-href="https://marcotiberio.github.io/DontBlink/"><img src="assets/Blithe_Facebook.png" class="social-icon" style="width: 2.2em;"></a>
           <a href="https://www.instagram.com/blithesaxon/" target="_blank"><img src="assets/Blithe_Instagram.png" class="social-icon" style="width: 2.2em;"></a>
+          <a href="https://twitter.com/blithesaxon" target="_blank"><img src="assets/Blithe_Twitter.png" class="social-icon" style="width: 2.2em;"></a>
           <a href="https://www.youtube.com/watch?v=IE_aTCohKGA&list=RDEMJ3jnniSL8TCCpeGbqggo0w&start_radio=1" target="_blank"><img src="assets/Blithe_Youtube.png" class="social-icon" style="width: 2.2em;"></a>
+          <!-- <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:604wNNLUmrAmNOSEU8GfK4&size=basic&theme=dark&show-count=0" width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe> -->
           <a href="https://open.spotify.com/artist/604wNNLUmrAmNOSEU8GfK4" target="_blank"><img src="assets/Blithe_Spotify_Follow.png" class="social-icon" style="width: 6.2em;"></a>
         </div>
 
         <div class="main-landing">
 
           <p class="text-landing" style="padding-top: 15%;">
-            Try not to blink or the video will restart.<br>This experience requires camera access.<br>
+            This experience requires camera access.<br>For a better experience, remove your glasses.<br>Remember, don't blink!<br>
             <input type="button" id="button-landing" value="PLAY" onclick="window.location.href='video.html'" />
           </p>
         </div>
@@ -95,7 +108,7 @@
     <script src="js/BRFv4DemoMinimalWebcam.js"></script>
     <script src="index.js"></script> -->
 
-    <script>      
+    <script>    
     // var brfv4 = {};
 
       // $("#button-close").click( function() { $("#overlay").hide(); } );

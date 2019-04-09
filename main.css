@@ -208,6 +208,10 @@ a:active {
     transform: scale(1.1);
 }
 
+.count {
+    display: none !important;
+}
+
 /* #social-instagram {
     cursor: pointer;
 }
