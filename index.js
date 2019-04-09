@@ -8,11 +8,12 @@ function blink() {
   _blinked = true;
 
   const now = new Date();
-  const timeDiff = (now - start) / 1000; //in s
-  // // get seconds
+  const timeDiff = (now - _start) / 1000; //in s
+  // get seconds
   const seconds = Math.round(timeDiff);
-  if(!alert(`YOU LASTED ${seconds} SECONDS!`)){window.location.reload();} 
-  // start = new Date();
+  if(confirm(`You lasted ${seconds} seconds without blinking! Click OK to keep playing or CANCEL to watch full video!`)){}
+  else    window.location.replace("fullvideo.html");
+  _start = new Date();
 
   if (_timeOut > -1) {
      clearTimeout(_timeOut);
