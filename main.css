@@ -11,6 +11,7 @@ button {
     background: transparent;
     color: white;
     border: none;
+    outline: none;
     font-size: 40px;
     line-height: 1em;
     font-weight: 700;
@@ -145,6 +146,7 @@ a:active {
     background-color: white;
     color: black;
     cursor: pointer;
+    outline: none;
 }
 
 .footer-landing {
@@ -208,8 +210,25 @@ a:active {
     transform: scale(1.1);
 }
 
-.count {
-    display: none !important;
+#copytoshare:hover {
+    transform: scale(1.1);
+    outline: none;
+    border: none;
+}
+
+#copytoshare:active {
+    outline: none;
+    border: none;
+}
+
+#copytoshare:visited {
+    outline: none;
+    border: none;
+}
+
+#copytoshare:link {
+    outline: none;
+    border: none;
 }
 
 /* #social-instagram {
