@@ -114,9 +114,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
 
 
+
     <!-- Instantiate clipboard by passing a string selector -->
     <script>
-    var clipboard = new ClipboardJS('.btn');
+    var clipboard = new ClipboardJS('#copytoshare');
     clipboard.on('success', function(e) {
         console.log(e);
     });

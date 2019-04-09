@@ -58,7 +58,7 @@
         </div> -->
         <!-- <video controls autoplay preload="auto" src="assets/videotest.mov"></video>
         <video-js autoplay src="assets/videotest.mov"></video-js>           -->
-        <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/r_jnsbqtjeU?controls=0&autoplay=1&showinfo=0&rel=0&loop=1&disablekb=1&modestbranding=1" frameborder="0" allow=" autoplay;"></iframe>
+        <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/Jmu-tAFloV8?controls=0&autoplay=1&showinfo=0&rel=0&loop=1&disablekb=1&modestbranding=1" frameborder="0" allow=" autoplay;"></iframe>
       
       </div>
           
@@ -110,7 +110,29 @@
     <script src="js/BRFv4DemoMinimalWebcam.js"></script>
     <script src="index3.js"></script> -->
 
-    <script>      
+    <!-- Include library Clipboard -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+
+
+    <!-- Instantiate clipboard by passing a string selector -->
+    <script>
+    var clipboard = new ClipboardJS('#copytoshare');
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>
+
+    <script> 
+
+    $('#copytoshare').popover().click(function () {
+      setTimeout(function () {
+          $('#copytoshare').popover('hide');
+      }, 2000);
+    });
+
       // var brfv4 = {};
 
       // $("#button-close").click( function() { $("#overlay").hide(); } );
