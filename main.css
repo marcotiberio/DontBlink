@@ -200,6 +200,18 @@ a:active {
     z-index: 1000;
 }
 
+.social-mobile {
+    background-color: black;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: right;
+    padding-top: 2.5%;
+    padding-right: 7.5%;
+    color: white !important;
+    /* cursor: pointer !important; */
+    z-index: 1000;
+}
+
 .social-icon {
     margin-left: 1%;
     cursor: pointer !important;
@@ -302,5 +314,7 @@ a:active {
     .social-icon {
         padding-top: 5% !important;
     }
+
+
 
   }
