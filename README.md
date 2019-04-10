@@ -4,7 +4,7 @@ Blithe is a brand new pop-star-in-the-making who arrives, as if fully formed, we
 
 🔮 https://marcotiberio.github.io/DontBlink/ 🔮
 
-Instagram: https://www.instagram.com/blithesaxon/ 📸
+📸 https://www.instagram.com/blithesaxon/ 📸
 
-YouTube: https://www.youtube.com/channel/UCHB8BxB78XyFX5lP5j7GbqQ 📺
+📺 https://www.youtube.com/channel/UCHB8BxB78XyFX5lP5j7GbqQ 📺
 
