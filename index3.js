@@ -7,7 +7,7 @@ const EYE_AR_THRESH = 0.3;
 const EYE_AR_CONSEC_FRAMES = 2;
 
 // initialize the frame counters and the total number of blinks etc.
-let _counter = 0;
+let _counter = 1;
 let _total = 0;
 let _blinked = false;
 let _timeOut = -1;
@@ -53,23 +53,30 @@ function eyeAspectRatio(eye) {
   return EAR;
 }
 
+let start = new Date();
+
 function blink() {
-  _blinked = true;
-  _total += 1;
+  if (!status){
+      status = true;
+      _blinked = true;
+      _total += 1;
 
-  const now = new Date();
-  const timeDiff = (now - _start) / 1000; //in s
-  // get seconds
-  const seconds = Math.round(timeDiff);
-  if(confirm(`You lasted ${seconds} seconds without blinking! Click OK to keep playing or CANCEL to watch full video!`)){}
-  else    window.location.replace("fullvideo.html");
-  _start = new Date();
+      const now = new Date();
+      const timeDiff = (now - _start) / 1000; //in s
+      // get seconds
+      const seconds = Math.round(timeDiff);
+      if(confirm(`You lasted ${seconds} seconds without blinking! Click OK to watch full video or CANCEL to play again!`)){
+      status = false;
+      }
+      else    window.location.reload();
+      _start = new Date();
 
-  if (_timeOut > -1) {
-    clearTimeout(_timeOut);
+      if (_timeOut > -1) {
+          clearTimeout(_timeOut);
+      }
+
+      _timeOut = setTimeout(resetBlink, 500);
   }
-
-  _timeOut = setTimeout(resetBlink, 500);
 }
 
 function resetBlink() {
