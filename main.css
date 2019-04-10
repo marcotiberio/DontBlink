@@ -194,7 +194,7 @@ a:active {
     grid-column-end: 3;
     text-align: right;
     padding-top: 2.5%;
-    padding-right: 6%;
+    padding-right: 7.5%;
     color: white !important;
     /* cursor: pointer !important; */
     z-index: 1000;
@@ -313,6 +313,10 @@ a:active {
 @media only screen and (max-width: 600px) {
     .social-icon {
         padding-top: 5% !important;
+    }
+
+    .spotify button {
+        display: none;
     }
 
 
