@@ -69,7 +69,7 @@ function blink() {
     clearTimeout(_timeOut);
   }
 
-  _timeOut = setTimeout(resetBlink, 50);
+  _timeOut = setTimeout(resetBlink, 500);
 }
 
 function resetBlink() {
