@@ -8,3 +8,4 @@ Blithe is a brand new pop-star-in-the-making who arrives, as if fully formed, we
 
 📺 https://youtube.com/channel/UCHB8BxB78XyFX5lP5j7GbqQ 📺
 
+<a href="https://open.spotify.com/artist/604wNNLUmrAmNOSEU8GfK4" target="_blank">Spotify</a>
