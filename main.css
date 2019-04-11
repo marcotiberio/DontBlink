@@ -339,8 +339,11 @@ a:active {
     }
 
     .spotify button {
-        display: none;
+        visibility: hidden;
     }
+    
+    .troubleshooting-landing {
+        visibility: hidden;
 
 
 
