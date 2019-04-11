@@ -53,23 +53,28 @@ function eyeAspectRatio(eye) {
   return EAR;
 }
 
+let start = new Date();
+
 function blink() {
-  _blinked = true;
-  _total += 1;
+  if (!status){
+      status = true;
+      _blinked = true;
+      _total += 1;
 
-  const now = new Date();
-  const timeDiff = (now - _start) / 1000; //in s
-  // get seconds
-  const seconds = Math.round(timeDiff);
-  if(confirm(`You lasted ${seconds} seconds without blinking! Click OK to keep playing or CANCEL to watch full video!`)){}
-  else    window.location.replace("fullvideo.html");
-  _start = new Date();
+      const now = new Date();
+      const timeDiff = (now - _start) / 1000; //in s
+      // get seconds
+      const seconds = Math.round(timeDiff);
+      if(confirm(`You lasted ${seconds} seconds without blinking! Click OK to keep playing or CANCEL to watch full video!`)){}
+      else    window.location.reload(); 
+      _start = new Date();
 
-  if (_timeOut > -1) {
-    clearTimeout(_timeOut);
+      if (_timeOut > -1) {
+          clearTimeout(_timeOut);
+      }
+
+      _timeOut = setTimeout(resetBlink, 50);
   }
-
-  _timeOut = setTimeout(resetBlink, 500);
 }
 
 function resetBlink() {
