@@ -9,3 +9,7 @@ Blithe is a brand new pop-star-in-the-making who arrives, as if fully formed, we
 📺<a href="https://youtube.com/channel/UCHB8BxB78XyFX5lP5j7GbqQ" target="_blank">YouTube</a>📺
 
 🎧<a href="https://open.spotify.com/artist/604wNNLUmrAmNOSEU8GfK4" target="_blank">Spotify</a>🎧
+
+
+
+<i>Website made possible thanks to the real time face detection and tracking SDK developed by Marcel Klammer and provided here https://github.com/Tastenkunst</i>
