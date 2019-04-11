@@ -4,8 +4,8 @@ Blithe is a brand new pop-star-in-the-making who arrives, as if fully formed, we
 
 🔮 https://blithesaxon.com/ 🔮
 
-📸 https://instagram.com/blithesaxon/ 📸
+<a href="https://instagram.com/blithesaxon/" target="_blank">📸Instagram 📸</a>
 
-📺 https://youtube.com/channel/UCHB8BxB78XyFX5lP5j7GbqQ 📺
+<a href="https://youtube.com/channel/UCHB8BxB78XyFX5lP5j7GbqQ" target="_blank">📺YouTube 📺</a>
 
-<a href="https://open.spotify.com/artist/604wNNLUmrAmNOSEU8GfK4" target="_blank">Spotify</a>
+<a href="https://open.spotify.com/artist/604wNNLUmrAmNOSEU8GfK4" target="_blank">🎧Spotify 🎧</a>
