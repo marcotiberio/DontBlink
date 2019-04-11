@@ -49,7 +49,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-137657530-2');
     </script>
 
@@ -79,7 +78,7 @@
         <div class="main-landing">
 
           <p class="text-landing" style="padding-top: 15.5%;">
-            This experience requires camera access.<br>Remember... don't blink<br>
+            This experience requires camera access.<br>Remember... don't blink<br>
             <input type="button" id="button-landing" value="PLAY" onclick="window.location.href='video.html'" />
           </p>
         </div>
@@ -89,6 +88,25 @@
             <p id="about" style="font-family: 'Open Sans', sans-serif; font-size: 14px;">
             © 2019 Sweat Entertainment LTD. All rights reserved. This experience requires webcam access.
             </p>
+          </div>
+        </div>
+
+        <div class="troubleshooting-landing">
+          <p id="about-trouble" id="about" data-toggle="modal" data-target="#aboutModal">Troubleshooting</p>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+              </div>
+              <div class="modal-body" style="font-family: 'Open Sans', sans-serif; text-align: center;">
+                  For a better experience please remove your glasses
+                  and try not to have a strong source of light coming from your back.<br>
+                  Thank you very much, and have fun!
+              </div>
+            </div>
           </div>
         </div>
       
@@ -120,19 +138,14 @@
 
     <script> 
     var brfv4 = {};
-
       // $("#button-close").click( function() { $("#overlay").hide(); } );
-
       // videojs('player', {autoplay: true});
-
       // $(document).ready(function(){
       //   $("button").click(function(){
       //   location.reload(true);
       //   });
       // });
-
       // $("#spotify-follow-icon").click( function() { $("#spotify-follow-button").toggle(); } );
-
     </script>
 
     <!-- Instantiate clipboard by passing a string selector -->
@@ -147,7 +160,6 @@
       </script>
 
       <script> 
-
       $('#copytoshare').popover().click(function () {
         setTimeout(function () {
             $('#copytoshare').popover('hide');
