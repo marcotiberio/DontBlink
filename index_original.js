@@ -65,7 +65,7 @@ function blink() {
       const timeDiff = (now - _start) / 1000; //in s
       // get seconds
       const seconds = Math.round(timeDiff);
-      if(confirm(`You lasted ${seconds} seconds without blinking! Click OK to keep playing or CANCEL to watch full video!`)){}
+      if(confirm(`You lasted ${seconds} seconds without blinking! Click OK to watch full video or CANCEL to playing again!`)){}
       else    window.location.reload(); 
       _start = new Date();
 
