@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Blithe - Don't Blink</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="main.css" type="text/css" rel="stylesheet" media="screen" />
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Teko:400,700" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137657530-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137657530-2');
+  </script>
+
+
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+  <div id="canvas_container" style="left: 0px;">
+    <canvas id="the_canvas" width="100%" height="100%"></canvas>
+  </div>
+
+  <section class="container">
+
+    <div class="header">
+      <a href="index.html" style="color: white; text-decoration: none;">BLITHE</a>
+    </div>
+
+    <div class="social">
+      <a id="copytoshare" data-clipboard-text="https://marcotiberio.github.io/DontBlink/" data-toggle="popover"
+        data-placement="bottom" data-content="Link copied!">
+        <img src="assets/Blithe_Share.png" class="social-icon" style="width: 2.2em;">
+      </a>
+      <a href="https://www.instagram.com/blithesaxon/" target="_blank"><img src="assets/Blithe_Instagram.png"
+          class="social-icon" style="width: 2.2em;"></a>
+      <a href="https://www.youtube.com/channel/UCHB8BxB78XyFX5lP5j7GbqQ" target="_blank"><img
+          src="assets/Blithe_Youtube.png" class="social-icon" style="width: 2.2em;"></a>
+      <!-- <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:604wNNLUmrAmNOSEU8GfK4&size=basic&theme=dark&show-count=0" width="100" height="30" scrolling="no" frameborder="0" style="border:none; overflow:hidden; position: absolute; right: 3%; top: 3%; " allowtransparency="true"></iframe> -->
+      <a service="spotify" target="_blank" href="https://ffm.to/blitheforever" class="spotify button"><img
+          data-v-63d784d1="" src="assets/Blithe_Spotify_Follow.png" class="social-icon" style="width: 6.2em;"></a>
+    </div>
+
+    <div class="main" id="legal-notice" style="overflow: auto;">
+
+      <div class="header-legal">
+        <h2>PRIVACY POLICY</h2>
+        <h6>Last updated: 27th March 2019</h6>
+      </div>
+      <div class="body-legal">
+        <p>
+          <br>
+          This policy together with the Terms and Conditions tells you about the information we collect from you and how
+          it will be controlled and/or processed by us.
+          <br><br>
+          Please read this policy carefully to understand our views and practices regarding your personal data and how
+          we will treat it. By using our website you are accepting and consenting to the practices set out in this
+          policy. Please do not use this website unless you agree with this policy.
+          <br><br>
+          The data controller and/or processor is Sweat Entertainment whose registered office is at Unit 102, 28
+          Lawrence Road, London, England, N15 4EG.
+          <br><br>
+          <div class="titles-legal">
+            <h6>WHY WE COLLECT YOUR INFORMATION</h6>
+          </div>
+          According to the law, we can only collect your personal data if we have a proper reason for doing so. Our
+          lawful reason for collecting your personal data is Legitimate Interests, which are outlined in the table
+          below.
+          <div class="img-legal">
+            <img src="assets/privacy_table1.png" style="width: 60%;">
+          </div>
+          Your personal data will be kept for as long as we need it. How long we need data depends on what we are using
+          it for, whether we are providing services to you or for our own legitimate interests as outlined in this
+          policy or so we can comply with the law. When there is no longer a customer, legal or business need for us to
+          hold it or you’ve requested for it to be removed we will either delete it securely or in some cases anonymise
+          it. If you would like to access, correct, or have your personal data removed from our systems please use the
+          contact details at the end of this form. By requesting your data to be removed it will be understood your are
+          withdrawing consent for your data to be processed and collected.
+          <br><br>
+          <div class="titles-legal">
+            <h6>INFORMATION WE COLLECT</h6>
+          </div>
+          <b>Information you give to us</b>
+          <br>
+          We collect and process personally identifiable data that you have provided to us such as: name, address, email
+          address, mobile phone number and date of birth. You may provide this information to us in instances such as
+          when you:
+          <ul>
+            <li>subscribe to our email newsletter or text message updates</li>
+            <li>fill out and submit a form to us</li>
+            <li>enter a competition or sweepstake</li>
+            <li>use our applications, or connected applications on third-party sites or platforms such as social
+              networking sites</li>
+          </ul>
+          We may use your email address and/or mobile number for marketing purposes.
+          <br><br>
+          We may send you marketing communications via email if you have consented to receive such emails, these
+          communications may include information regarding our past, current or future products or special offers. If
+          you do not wish to receive these emails, please use the ‘unsubscribe’ feature, which will be provided on every
+          information we send you, or contact us via the email below.
+          <br><br>
+          We may use your email address and/or mobile phone number information to show you marketing on third party
+          sites and applications that we think are of interest to you. In addition, we may use your email address and/or
+          mobile number to create lookalike audiences to market to people who we think will have an interest the same
+          products to which you have subscribed to receive information.
+          <br><br>
+          In some cases personally identifiable information may be shared with third parties. This will always be
+          highlighted to you before you submit your information. We will tell you who your information will be shared
+          with, what for, and we will obtain your consent first before sharing your information. We may share some of
+          your personal data with the following categories of third parties:
+          <ul>
+            <li>Artists ex. For a meet and greet</li>
+            <li>Competition and Sweepstake Providers ex. ‘Win Artist Merchandise’ or ‘Win a Trip to See Artist Play’
+            </li>
+            <li>Suppliers/Distributors who provide services to us ex. When order merchandise or products such as
+              t-shirts, LPs or CDs</li>
+            <li>Data analytics companies and advertisers ex. Google and Facebook</li>
+          </ul>
+          When we send your personal data outside of European Economic Area (‘EEA’), we will take every precaution to
+          protect your personal data as if it were being used in the EEA. We will use one of the below safeguards to
+          ensure protection:
+          <ul>
+            <li>Transfer data to a non-EEA country which has privacy laws at least as protective as those within the
+              EEA; or</li>
+            <li>Put in place a contract with the recipient of the data meaning the recipient must uphold the same
+              standards as required within the EEA; or
+            </li>
+            <li>Transfer it to organisations which are part of the Privacy Shield, who set out standards for data
+              transference between the United States and European countries to ensure data is protected to the same
+              standards as the EEA.
+            </li>
+          </ul>
+          We protect your personal data against unauthorised access, unlawful use, accidental loss, corruption or
+          destruction. We use technical measures such as encryption and password protection to ensure the protection of
+          your data and the holding systems. Furthermore we limit the number of people who have access to the databases
+          in which your personal data is held.
+          <br><br>
+          Should your personal data be processed beyond the specified means we will notify you. For the avoidance of
+          doubt all your personal Information shall be stored, processed and used in accordance with the Data Protection
+          Act 1998 or any legislation that replaces it in whole or in part and any other legislation relating to the
+          protection of data such as the General Data Protection Regulation (GDPR).
+          <br><br>
+          <b>Automatically Collected Information</b>
+          <br>
+          When you visit the website we may automatically collect information about your visit through the use of
+          cookies. This may include information about your computer, including where available your IP address,
+          operating system, browser type and the geographical location of your computer, for system administration
+          purposes. We may also report aggregate information. This is statistical data about browsing actions and
+          patterns and does not identify you as an individual.
+          <br><br>
+          By using this website you agree to our use of cookies as set out in this Privacy Policy.
+          <br><br>
+          <div class="titles-legal">
+            <h6>COOKIES</h6>
+          </div>
+          <br>
+          This website uses cookies. By using this website you accept our use of cookies in accordance with this policy.
+          If you do not accept the use of these cookies please disable them by following the instructions below.
+          Removing or disabling cookies may result in a limited experience on this site.
+          <br><br>
+          1. WHAT IS A COOKIE?
+          <br>
+          Cookies are small text files that websites place in your browser when you visit them. When you return to the
+          site, the site can access its previously placed cookie to uniquely identify your browser. Cookies accomplish
+          several different things. They recall your preferences at a website, help you view content more efficiently
+          and improve the overall user experience on a website. They can also help advertisers see what interests you
+          and what advertising may be relevant to you. For further information on cookies, including how to see what
+          cookies have been set on your device and how to manage and delete them, visit http://www.allaboutcookies.org/
+          or www.ico.gov.uk
+          <br><br>
+          2. HOW DO WE USE COOKIES?
+          <br>
+          We use cookies to collect information about your computer, including where available your IP address,
+          operating system and browser type. We also use cookies to obtain information about your general Internet usage
+          and report aggregate statistical information.
+          In addition to uses for analytical purposes and for system administration, we also use cookies to report
+          aggregate information to our advertisers. This is statistical data about our users’ browsing actions and
+          patterns to understand what products may interest you and show you relevant advertising and promotions.
+          <br><br>
+          3. WHAT COOKIES DO WE USE?
+          <br>
+          We use the following cookies:
+          <br>
+          <b>Functionality cookies</b> - These are used to recognise you when you visit the Sweat Entertainment Sites.
+          This
+          enables us to personalise our content for you (for example show content and links relevant to the country you
+          are visiting from), and remember your preferences (for example, your choice of streaming service).
+          <br>
+          <b>Analytical cookies</b> - They allow us to recognise and count the number of visitors and to see how
+          visitors move
+          around our website. This helps us to improve the way the site works, for example, by ensuring that users are
+          finding what they are looking for easily.
+          <br>
+          <b>Ad Targeting cookies</b> - These cookies record your visit to the website, the pages you have visited and
+          the
+          links you have followed. We will use this information to make this site and the advertising displayed to you
+          on other sites you visit more relevant to your interests. We may aggregate this data to conduct profiling to
+          create actalike or lookalike audiences to show you advertising which we think will be of a legitimate interest
+          and share this information with our partners for this purpose. This will assist us to provide you and others
+          like you with Ads Relevant to your interests, please see the table below for additional information.
+          <br><br>
+          If you object to your cookies being used in this way please do not use this website.
+          <br><br>
+          You can find more information about the individual cookies we use and the purposes for which we use them in
+          the table below:
+          <div class="img-legal">
+            <img src="assets/privacy_table2.png" style="width: 60%;">
+          </div>
+          4. HOW DO I DELETE AND MANAGE COOKIES?
+          <br>
+          You can enable, disable or delete cookies within the settings on your browser. In order to do this, follow the
+          instructions provided by your browser (usually located within the “Help”, “Tools” or “Edit” menu). Disabling a
+          cookie or category of cookie does not delete the cookie from your browser; you will need to do this yourself
+          from within your browser by choosing the option to delete cookies. If you have disabled one or more cookies,
+          we may still use information collected from cookies prior to your disabled preference being set, however, we
+          will stop using the disabled cookie to collect any further information.
+          If you use your browser settings to block all cookies (including essential cookies) please note that you may
+          not be able to access all or parts of this website.
+          <br><br>
+          5. COOKIE AND PRIVACY PRACTICES OF THIRD PARTIES
+          <br>
+          This website may contain links to and from the websites of other networks, data partners, advertisers and
+          affiliates. It may also contain links to third party social media sites. These third parties may place their
+          own cookies or other technological devices on your Internet browser. We have no control over these third
+          parties and no responsibility for the technologies they employ. To learn how a particular website collects and
+          uses your information, you should read the privacy policy of that website.
+          We do not accept any responsibility or liability for third party policies. Please check these policies before
+          you submit any personal data to or use these websites.
+          <br><br>
+          6. CONTACT DETAILS
+          <br>
+          If you have questions or complaints about this policy, how we collect or process your personal data, or would
+          like to have your personal data removed, or have questions or comments regarding this website or our products
+          please contact us at: pj@sweatent.com.
+          <br><br>
+          Please also read this site’s <a href="terms.html" target="_blank">TERMS AND CONDITIONS</a> which can be found here.
+
+
+
+
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <div>
+        <p id="about" style="font-family: 'Open Sans', sans-serif; font-size: 14px;">
+          © 2019 Sweat Entertainment LTD. All rights reserved. This experience requires webcam access.
+        </p>
+      </div>
+    </div>
+
+    <!-- <div class="troubleshooting-landing">
+      <p id="about-trouble" id="about" data-toggle="modal" data-target="#aboutModal">Troubleshooting</p>
+    </div> -->
+
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          </div>
+          <div class="modal-body" style="font-family: 'Open Sans', sans-serif; text-align: center;">
+            For a better experience please remove your glasses and try not to have a strong source of light coming from
+            your back.
+            <br><br>Works best on desktop.
+            <br><br>Thank you!
+            <br><br><i>This website uses Cookies. By using this website you agree to our use of cookies, as set out in
+              our <a href="https://drive.google.com/file/d/1kM6tO0MfiejsyDu_o-3zM08zuuYAgPbg/view"
+                target="_blank">Privacy Policy</a>.</i>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  </section>
+
+
+
+
+
+  <!-- JQuery, Popper, Boostrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.3.0/dist/sweetalert2.all.min.js"></script>
+
+  <!-- Include library Clipboard -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+
+  <!-- Instantiate clipboard by passing a string selector -->
+  <script>
+    var clipboard = new ClipboardJS('#copytoshare');
+    clipboard.on('success', function (e) {
+      console.log(e);
+    });
+    clipboard.on('error', function (e) {
+      console.log(e);
+    });
+  </script>
+
+  <script>
+    $('#copytoshare').popover().click(function () {
+      setTimeout(function () {
+        $('#copytoshare').popover('hide');
+      }, 2000);
+    });
+  </script>
+
+</body>
+
+</html>

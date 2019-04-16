@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Blithe - Don't Blink</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="main.css" type="text/css" rel="stylesheet" media="screen" />
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Teko:400,700" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137657530-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137657530-2');
+  </script>
+
+
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+  <div id="canvas_container" style="left: 0px;">
+    <canvas id="the_canvas" width="100%" height="100%"></canvas>
+  </div>
+
+  <section class="container">
+
+    <div class="header">
+      <a href="index.html" style="color: white; text-decoration: none;">BLITHE</a>
+    </div>
+
+    <div class="social">
+      <a id="copytoshare" data-clipboard-text="https://marcotiberio.github.io/DontBlink/" data-toggle="popover"
+        data-placement="bottom" data-content="Link copied!">
+        <img src="assets/Blithe_Share.png" class="social-icon" style="width: 2.2em;">
+      </a>
+      <a href="https://www.instagram.com/blithesaxon/" target="_blank"><img src="assets/Blithe_Instagram.png"
+          class="social-icon" style="width: 2.2em;"></a>
+      <a href="https://www.youtube.com/channel/UCHB8BxB78XyFX5lP5j7GbqQ" target="_blank"><img
+          src="assets/Blithe_Youtube.png" class="social-icon" style="width: 2.2em;"></a>
+      <!-- <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:604wNNLUmrAmNOSEU8GfK4&size=basic&theme=dark&show-count=0" width="100" height="30" scrolling="no" frameborder="0" style="border:none; overflow:hidden; position: absolute; right: 3%; top: 3%; " allowtransparency="true"></iframe> -->
+      <a service="spotify" target="_blank" href="https://ffm.to/blitheforever" class="spotify button"><img
+          data-v-63d784d1="" src="assets/Blithe_Spotify_Follow.png" class="social-icon" style="width: 6.2em;"></a>
+    </div>
+
+    <div class="main" id="legal-notice" style="overflow: auto;">
+
+      <div class="header-legal">
+        <h4>TERMS & CONDITIONS</h4>
+        <h2>PLEASE READ THESE TERMS & CONDITIONS OF USE BEFORE USING THIS SITE.</h2>
+      </div>
+      <div class="body-legal">
+        <p>
+          <br>
+          By using this site, you signify your consent to these terms of use ("Terms"). If you do not agree to these
+          Terms of use, please do not use the site. We reserve the right, at our discretion, to change, modify, add, or
+          remove portions of these Terms at any time. Please check these Terms periodically for changes. Your continued
+          use of <a href="https://blithesaxon.com/" target="_blank"><u>http://blithesaxon.com/</u></a> (referred to as
+          "the site", "this site" herein) following the posting of
+          changes to these Terms will mean you accept those changes.
+          <br><br>
+          For information regarding the processing and hosting of your personal data please also read the PRIVACY POLICY
+          for this site which can be found <a href="privacy.html" target="_blank"><u>here</u></a>.
+          <br><br>
+          From time to time we may supplement these Terms with additional Terms relevant to specific content or events
+          ("Additional Terms"). These Additional Terms may be placed on this site to be viewed in connection with the
+          specific content or events and shall be identified as such. You understand and agree that such Additional
+          Terms are hereby incorporated by reference into these Terms.
+          Lawrence Road, London, England, N15 4EG.
+          <br><br>
+          <div class="titles-legal">
+            <h4>RESTRICTIONS ON USE OF MATERIALS</h4>
+          </div>
+          This site is owned and operated by <b>Sweat Entertainment and Blithe</b> (referred to as "Sweat Entertainment
+          and
+          Blithe" "we," "us," or "our" herein). No material from this website may be copied, reproduced, republished,
+          amended, modified, revised, edited, changed, added to, deleted, uploaded, posted, transmitted, or distributed
+          in any way, without our express written permission. You may download one copy of the materials displayed on
+          the site for your personal, non-commercial home use only, provided you keep intact all copyright and other
+          proprietary notices. Modification of the materials or use of the materials for any other purpose is a
+          violation of <b>Sweat Entertainment and Blithe</b>’s copyright and other proprietary rights. All trademarks,
+          service
+          marks, and trade names are proprietary to <b>Sweat Entertainment and Blithe</b> are to be kept intact.
+          <br><br>
+          In the event you download any material from the site, the material, including any software, files, images,
+          graphics or text are licensed to you by <b>Sweat Entertainment and Blithe</b>. <b>Sweat Entertainment and
+            Blithe</b> do not
+          transfer title to such material to you. You own the medium on which the material is recorded, but Sweat
+          Entertainment and Blithe retains full and complete title to the material at all times, and all intellectual
+          property rights therein. You may not add, delete, distort, or otherwise modify the contents on the sites. Any
+          unauthorised attempts to modify any Online Material, to defeat or circumvent our security features, or to
+          utilise the site for anything other than its intended purpose is prohibited.
+          <br><br>
+          Any communication or material, which is transmitted by you to the site by electronic mail or otherwise, will
+          be treated as non-confidential and non-proprietary. Accordingly, anything you transmit or post may be used by
+          us or our affiliates for any purpose, including, but not limited to, reproduction, disclosure, transmission,
+          publication, broadcasting and posting. Furthermore, we shall be free to use any ideas, concepts, know-how or
+          techniques contained in any communication you send to us for any purpose whatsoever including, but not limited
+          to, developing, manufacturing and marketing products or events using such information.
+          <br><br>
+          <div class="titles-legal">
+            <h4>TERMINATION</h4>
+          </div>
+          These Terms are effective until terminated by either party. You may terminate these Terms at any time by
+          destroying all materials obtained from this site and all related documentation and all copies and
+          installations thereof, whether made under these terms or otherwise. These Terms will terminate immediately
+          without notice from <b>Sweat Entertainment and Blithe</b> if in <b>Sweat Entertainment and Blithe</b>'s sole
+          discretion you
+          fail to comply with any of these Terms. Upon termination, you must destroy all materials obtained from this
+          site and all copies thereof, whether made under these Terms or otherwise.
+          <br><br>
+          If you wish to have your personal data removed please review our <a href="privacy.html"
+            target="_blank"><u>Privacy Policy</u></a> and contact us on the details
+          below.
+          <br><br>
+          <div class="titles-legal">
+            <h4>LINKS</h4>
+          </div>
+          From time to time we will make available to you links from the site to third party sites. These sites are not
+          in any way approved, checked, edited, vetted or endorsed by us and you agree that we shall not be responsible
+          or liable in any way for the content, advertising or products available from such sites, the quality,
+          functionality, suitability or legality of such sites or for any dealings that you may have, or the
+          consequences of such dealings, with such third party site operators. You also agree that any dealings you have
+          with such third party site operators shall be on the terms and conditions (if any) of the third party operator
+          and you hereby waive any claim you might have against us with respect to such sites. You agree that we are not
+          liable in any way for and you agree to indemnify us in the manner referred to below in these Terms in relation
+          to such dealings. Any arrangements made between you and any third party named on the site are at your sole
+          risk and responsibility.
+          <br><br>
+          From time to time third parties may link to our site without our express consent or knowledge. <b>Sweat
+            Entertainment and Blithe</b> is not responsible in any way for any dealings which you may have with these
+          unauthorised sites or any content which may be displayed or linked to by these third parties. If you do come
+          across any link which is offensive or otherwise unsuitable or inappropriate to <b>Sweat Entertainment and
+            Blithe</b>
+          or our users please let us know.
+          <br><br>
+          <div class="titles-legal">
+            <h4>LIMITATION OF LIABILITY</h4>
+          </div>
+          You expressly agree that your use of and browsing of the site are at your own risk. Neither <b>Sweat
+            Entertainment and Blithe</b> nor any other party involved in creating, producing or delivering the site is
+          liable
+          for any direct, incidental, special, consequential, indirect or punitive damages arising out of your access
+          to, or use of, or inability to use the site or for the cost of procurement of substitute goods or services or
+          resulting from any goods or services purchased or obtained or messages received or transactions entered into
+          through the site or resulting from any unauthorized access to or alteration of your transmissions or data,
+          including but not limited to, damages for loss of profits, use, data or other intangible property, even if
+          <b>Sweat Entertainment and Blithe</b> has been advised of the possibility of such damages.
+          <br><br>
+          Applicable law may not allow the limitation or exclusion of liability or incidental or consequential damages,
+          so the above limitation or exclusion may not apply to you. In no event shall <b>Sweat Entertainment and
+            Blithe</b>
+          total liability to you for all damages, losses, and causes of action (whether in contract, tort (including,
+          but not limited to, negligence), or otherwise) exceed the amount paid by you, if any, for accessing this site.
+          <br><br>
+          You agree to indemnify, keep indemnified, defend and hold <b>Sweat Entertainment and Blithe</b> and its parent
+          companies, subsidiaries, affiliates and their respective officers, directors, employees, owners, agents,
+          information providers and licensors harmless from and against any and all claims, damages, liability, losses,
+          costs and expenses (including legal fees) (whether or not foreseeable or avoidable) incurred or suffered by
+          any of these parties and any claims or legal proceedings which are brought or threatened arising from your use
+          of, connection with or conduct on the site or any breach by you of these Terms. <b>Sweat Entertainment and
+            Blithe</b>
+          reserves the right, at its own expense, to assume the exclusive defense and control of any matter otherwise
+          subject to indemnification by you, and in such case, you agree to co-operate with our defense of such claim.
+          <br><br>
+          <div class="titles-legal">
+            <h4>JURISDICTIONAL ISSUES</h4>
+          </div>
+          Unless otherwise specified, the materials in the site are presented solely for the purpose of promoting the
+          product and associated products, events and services of <b>Sweat Entertainment and Blithe</b>. This site is
+          controlled and operated by <b>Sweat Entertainment and Blithe</b> from its offices within the UK. Sweat
+          Entertainment
+          and Blithe makes no representation that materials in the site are appropriate or available for use in other
+          locations. Those who choose to access this site from other locations do so at their own risk and are
+          responsible for compliance with local laws, if and to the extent local laws are applicable.
+          <br><br>
+          In the event that any provision of these Terms conflicts with the law under which the Terms are to be
+          construed or if any such provisions are held invalid by a court with jurisdiction over the parties to the
+          Terms, such provision will be deemed to be restated to reflect as nearly as possible the original intentions
+          of the parties in accordance with applicable law, and the remainder of these Terms will remain in full force
+          and effect.
+          <br><br>
+          These Terms shall be governed by and construed in accordance with the laws of England and Wales. If any
+          provision of these Terms shall be unlawful, void, or for any reason unenforceable, then that provision shall
+          be deemed severable from these Terms and shall not affect the validity and enforceability of any remaining
+          provisions. These Terms and any Additional Terms constitute the entire agreement between us relating to the
+          subject matter herein and shall not be modified except in writing, signed by both parties.
+          <br><br>
+          If you have questions about these Terms and Conditions or have questions or comments regarding this website or
+          our products please contact us at: <a href="mailto:pj@sweatent.com" target="_blank"></a>.
+          <br><br>
+          <b>LAST UPDATED:</b> 27th March 2019
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <div>
+        <p id="about" style="font-family: 'Open Sans', sans-serif; font-size: 14px;">
+          © 2019 Sweat Entertainment LTD. All rights reserved. This experience requires webcam access.
+        </p>
+      </div>
+    </div>
+
+    <!-- <div class="troubleshooting-landing">
+      <p id="about-trouble" id="about" data-toggle="modal" data-target="#aboutModal">Troubleshooting</p>
+    </div> -->
+
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          </div>
+          <div class="modal-body" style="font-family: 'Open Sans', sans-serif; text-align: center;">
+            For a better experience please remove your glasses and try not to have a strong source of light coming from
+            your back.
+            <br><br>Works best on desktop.
+            <br><br>Thank you!
+            <br><br><i>This website uses Cookies. By using this website you agree to our use of cookies, as set out in
+              our <a href="https://drive.google.com/file/d/1kM6tO0MfiejsyDu_o-3zM08zuuYAgPbg/view"
+                target="_blank">Privacy Policy</a>.</i>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  </section>
+
+
+
+
+
+  <!-- JQuery, Popper, Boostrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.3.0/dist/sweetalert2.all.min.js"></script>
+
+  <!-- Include library Clipboard -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+
+  <!-- Instantiate clipboard by passing a string selector -->
+  <script>
+    var clipboard = new ClipboardJS('#copytoshare');
+    clipboard.on('success', function (e) {
+      console.log(e);
+    });
+    clipboard.on('error', function (e) {
+      console.log(e);
+    });
+  </script>
+
+  <script>
+    $('#copytoshare').popover().click(function () {
+      setTimeout(function () {
+        $('#copytoshare').popover('hide');
+      }, 2000);
+    });
+  </script>
+
+</body>
+
+</html>
